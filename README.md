@@ -1,6 +1,12 @@
 # express-mongo-basic-app
 Express Mongo basic app.
 
+# API endpoints
+``` text
+health
+ GET     ./health
+```
+
 # Development
 
 ## Environment Variables
