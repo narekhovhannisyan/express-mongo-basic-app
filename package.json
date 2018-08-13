@@ -1,22 +1,43 @@
 {
   "name": "express-mongo-basic-app",
+  "description": "Express Mongo basic application",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/narekhovhannisyan/express-mongo-basic-app.git"
-  },
   "author": "Narek Hovhannisyan",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/narekhovhannisyan/express-mongo-basic-app/issues"
   },
-  "homepage": "https://github.com/narekhovhannisyan/express-mongo-basic-app#readme",
+  "contributors": [
+    {
+      "name": "Narek Hovhannisyan",
+      "email": "narekgilmour@gmail.com"
+    }
+  ],
   "dependencies": {
+    "body-parser": "1.18.3",
     "express": "4.16.3"
+  },
+  "devDependencies": {
+    "fixpack": "2.3.1"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
+  "homepage": "https://github.com/narekhovhannisyan/express-mongo-basic-app#readme",
+  "keywords": [
+    "Basic",
+    "app",
+    "nodejs",
+    "setup"
+  ],
+  "main": "src/bin/www",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/narekhovhannisyan/express-mongo-basic-app"
+  },
+  "scripts": {
+    "fix-package": "fixpack",
+    "start": "node ./src/bin/www"
   }
 }
