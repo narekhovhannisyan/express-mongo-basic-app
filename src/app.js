@@ -1,9 +1,15 @@
 const bodyParser = require('body-parser')
 const express = require('express')
+const morgan = require('morgan')
+
+const healthApi = require('./routes/health/health.api')
 
 const app = express()
 
-const healthApi = require('./routes/health/health.api')
+/**
+ * @description Middleware - setup a logger.
+ */
+app.use(morgan('dev'))
 
 /**
  * @description Middleware - body parser:
