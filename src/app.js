@@ -1,6 +1,9 @@
 const bodyParser = require('body-parser')
 const express = require('express')
+
 const app = express()
+
+const healthApi = require('./routes/health/health.api')
 
 /**
  * @description Middleware - body parser:
@@ -9,5 +12,10 @@ const app = express()
  */
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: false }))
 app.use(bodyParser.json({ limit: '5mb' }))
+
+/**
+ * @description Add health API (NO authorization, NO api prefix).
+ */
+app.use('/health', healthApi)
 
 module.exports = app
