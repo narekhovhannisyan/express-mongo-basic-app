@@ -1,3 +1,3 @@
 module.exports = {
-  Errors: require('error.util')
+  Errors: require('./error.util')
 }
