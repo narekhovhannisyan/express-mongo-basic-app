@@ -1,6 +1,6 @@
 const http = require('http')
 
-const { processVariablesChecker } = require('../config/process-variables-checker')
+const processVariablesChecker = require('../config/process-variables-checker')
 
 const app = require('../app')
 
