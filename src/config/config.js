@@ -1,5 +1,5 @@
 /**
- * @description Environment variables and config variables.
+ * @description Environment and config variables.
  * @type {Object}
  */
 const config = {}
